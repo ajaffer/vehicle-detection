@@ -53,8 +53,8 @@ def plot3d(pixels, colors_rgb,
 # img = cv2.imread("31.png") #white car #S 100-200
 # img = cv2.imread("53.png") #red car #S 100-200
 
-img = cv2.imread("2.png") #sky
-# img = cv2.imread("3.png") #building
+# img = cv2.imread("2.png") #sky
+img = cv2.imread("3.png") #building
 # img = cv2.imread("8.png") #road
 
 # Select a small fraction of pixels to plot by subsampling it
