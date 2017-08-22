@@ -22,7 +22,6 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 [image2_22]: ./output_images/hog_examples/ex2/hog_ch2.jpg
 [image2_23]: ./output_images/hog_examples/ex2/hog_ch3.jpg
 
-[image3]: ./output_images/search_windows.png
 [image4]: ./output_images/boxes1.png
 [image42]: ./output_images/boxes2.png
 [image43]: ./output_images/boxes3.png
@@ -41,6 +40,7 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 
 
 [video1]: ./output_images/project_video.mp4
+[video2]: ./output_images/test_video.mp4
 [code]: ./my-work/mywork.ipynb
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -87,12 +87,8 @@ I trained a linear SVM see `svc = LinearSVC()`, it uses `extract_features` funct
 
 ####1. Sliding window search
 
-As it was discussed in the lectures, the car that is near appears to be larger than the ones that are far away. Therefore a good idea is to use sliding windows of smaller size near the horizon and bigger ones near the bottom side of the image.  I really liked the window selection done by: https://github.com/jimwinquist/vehicle-detection/blob/master/vehicle_detection.py, I copied the window selection logic from there.
-Previously I tried somewhat different window sizes, but my results were not as good as the above. In future I will research how can I improve upon the window selection.
-
-The following image is from the same place that I borrowed the window selection logic: https://github.com/jimwinquist/vehicle-detection I used the same image, since it exactly shows how the window selection is being done.
-
-![alt text][image3]
+As it was discussed in the lectures, the car that is near appears to be larger than the ones that are far away. Therefore a good idea is to use sliding windows of smaller size near the horizon and bigger ones near the bottom side of the image. 
+I choose widows of sizes 48, 64, 128, and 256. I started with a window of size 32, but that was yielding too many false positives, since it was detected small features in the road and the trees.
 
 ####2. Examples of test images 
 
@@ -112,6 +108,7 @@ Following is an example of how my code detects the vehicles.
 
 ####1. 
 Here's a link to my [video1]
+And a shorter video along with the Lane Finding [video2]
 
 
 ####2. 
