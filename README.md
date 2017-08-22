@@ -37,6 +37,12 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 [image55]: ./output_images/heatmap5.png
 [image56]: ./output_images/heatmap6.png
 
+[image6]: ./output_images/test1.jpg
+[image7]: ./output_images/test2.jpg
+[image8]: ./output_images/test3.jpg
+[image9]: ./output_images/test4.jpg
+[image10]: ./output_images/test5.jpg
+[image11]: ./output_images/test6.jpg
 
 
 [video1]: ./output_images/project_video.mp4
@@ -108,7 +114,7 @@ Following is an example of how my code detects the vehicles.
 
 ####1. 
 Here's a link to my [video1]
-And a shorter video along with the Lane Finding [video2]
+
 
 
 ####2. 
@@ -136,11 +142,23 @@ Note: the titles of the following figures are incorrect, `original` depicts the 
 ###Discussion
 
 ####1. Problems / issues faced during this project  
-Where will your pipeline likely fail?  
+Where will your pipeline likely fail?
+It is currently not able to detect on coming traffic. I need to use smaller box sizes.
+
+
+Extra Fun:
+I Run the pipeline along with the Advance Lane's pipeline.  I have added the code along side the Advanced Lanes code, so that I can run them in in combined pipeline.
+
+![alt text][image6]
+![alt text][image7]
+![alt text][image8]
+![alt text][image9]
+![alt text][image10]
+![alt text][image11]
+
+And here is a short video [video2]
 
 Future Improvements:
 * It would be a good idea to extrapolate the direction of movement and look in that direction for object detection.
 * The current pipeline is running very slow, I will look into making it performant. 
 * I am using SVM Linear classifier, I would research into using Deep Learning models in order to improve the results.
-* Run the pipeline along with the Advance Lane's pipeline.  I have added the code along side the Advanced Lanes code, so that I can run them in in combined pipeline.
-
