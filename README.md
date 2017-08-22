@@ -12,7 +12,16 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 
 [//]: # (Image References)
 [image1]: ./output_images/CarNotCar.png
-[image2]: ./output_images/hog_examples/hog/hog.jpg
+[image2]: ./output_images/hog_examples/ex1/img_tosearch.jpg
+[image21]: ./output_images/hog_examples/ex1/hog_ch1.jpg
+[image22]: ./output_images/hog_examples/ex1/hog_ch2.jpg
+[image23]: ./output_images/hog_examples/ex1/hog_ch3.jpg
+
+[image2_2]: ./output_images/hog_examples/ex2/img_tosearch.jpg
+[image2_21]: ./output_images/hog_examples/ex2/hog_ch1.jpg
+[image2_22]: ./output_images/hog_examples/ex2/hog_ch2.jpg
+[image2_23]: ./output_images/hog_examples/ex2/hog_ch3.jpg
+
 [image3]: ./output_images/search_windows.png
 [image4]: ./output_images/boxes1.png
 [image42]: ./output_images/boxes2.png
@@ -53,6 +62,14 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 
 ![alt text][image2]
+![alt text][image21]
+![alt text][image22]
+![alt text][image23]
+
+![alt text][image2_2]
+![alt text][image2_21]
+![alt text][image2_22]
+![alt text][image2_23]
 
 ####2. How I settled final choice of HOG parameters.
 
