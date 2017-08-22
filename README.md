@@ -153,7 +153,6 @@ I Run the pipeline along with the Advance Lane's pipeline.  I have added the cod
 ![alt text][image8]
 ![alt text][image9]
 ![alt text][image10]
-![alt text][image11]
 
 And here is a short video [video2]
 
