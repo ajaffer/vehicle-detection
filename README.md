@@ -41,6 +41,7 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 
 
 [video1]: ./output_images/project_video.mp4
+[code]: ./my-work/mywork.ipynb
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -49,6 +50,8 @@ Note: My code includes the code from Project 4, Advance Lane Lines, please look 
 ###Histogram of Oriented Gradients (HOG)
 
 ####1. How HOG features were extracted from the training images.
+
+Solution is coded in this file [code]
 
 I have used the code from the quiz, the code that extracts HOG features is located in the IPython notebook, it is called `get_hog_features`  
 
