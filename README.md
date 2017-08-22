@@ -78,7 +78,7 @@ The following image is from the same place that I borrowed the window selection 
 
 I am using `YCrCb` 3-channel HOG features plus spatially binned color and histograms of color in the feature vector.
 
-Following is an example of how I my code detects the vehicles.
+Following is an example of how my code detects the vehicles.
 
 ![alt text][image4]
 ![alt text][image42]
