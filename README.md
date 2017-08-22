@@ -128,7 +128,6 @@ Note: the titles of the following figures are incorrect, `original` depicts the 
 ### Here are six frames and their corresponding heatmaps:
 
 ![alt text][image5]
-![alt text][image51]
 ![alt text][image52]
 ![alt text][image53]
 ![alt text][image54]
