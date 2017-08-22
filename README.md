@@ -90,21 +90,18 @@ Following is an example of how my code detects the vehicles.
 
 ### Video Implementation
 
-####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
+####1. 
 Here's a [link to my video result](./project_video.mp4)
 
 
-####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
+####2. 
+In each frame of the video I collected the positions of the detected boxes, from these boxes I created a heatmap and then thresholded the heatmap to find out the vehicle positions.
 
-I recorded the positions of positive detections in each frame of the video.  
-From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  
-I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  
-I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each 
-blob detected.  
+I used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap, each corresponding to detected vehicles. I then constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from a series of frames of video, 
-the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
+Following shows the final detected boxes and the corresponding heat maps.
 
+Note: the titles of the following figures are incorrect, `original` depicts the final-detected vehicles and `processed` the heat maps.
 ### Here are six frames and their corresponding heatmaps:
 
 ![alt text][image5]
@@ -123,11 +120,10 @@ the result of `scipy.ndimage.measurements.label()` and the bounding boxes then o
 
 ####1. Problems / issues faced during this project  
 Where will your pipeline likely fail?  
-Currently the pipeline has many false positives,
 
-What could you do to make it more robust?
-It would be a good idea to extrapolate the direction of movement and look in that direction for object detection.
-
-The current pipeline is running very slow, I am using 
-I am using SVM Linear classifier, I would research into using Deep Learning models in order to improve the results.
+Future Improvements:
+* It would be a good idea to extrapolate the direction of movement and look in that direction for object detection.
+* The current pipeline is running very slow, I will look into making it performant. 
+* I am using SVM Linear classifier, I would research into using Deep Learning models in order to improve the results.
+* Run the pipeline along with the Advance Lane's pipeline.  I have added the code along side the Advanced Lanes code, so that I can run them in in combined pipeline.
 
